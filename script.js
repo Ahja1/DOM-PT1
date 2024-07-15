@@ -1,5 +1,12 @@
-import "./styles.css";
+// Menu data structure
+var menuLinks = [
+    { text: 'about', href: '/about' },
+    { text: 'catalog', href: '/catalog' },
+    { text: 'orders', href: '/orders' },
+    { text: 'account', href: '/account' },
+  ];
 
+//step 1
 const mainEl = document.querySelector('main');
 console.log(mainEl);
 //step 2
@@ -33,3 +40,22 @@ menuLinks.forEach(function(link) {
     //step 5 
     topmenuEl.appendChild(linkEl)
 })
+
+// Part 2 
+
+// Creating the Submenu 
+//step 1 
+const subMenuEl = document.getElementById ('sub-menu')
+console.log(subMenuEl)
+//step 2
+subMenuEl.style.height = ('100%')
+//step 3 
+subMenuEl.style.backgroundColor = 'var(--sub-menu-bg)'
+//step 4
+subMenuEl.classList = 'flex-around'
+
+//submenu 
+//step 1 
+subMenuEl.style.position = 'absolute'
+//step 2 
+subMenuEl.style.top = '0'
